@@ -14,6 +14,7 @@ public class Person {
             private Integer version;
 
     String name;
+    Integer pr;
     @ManyToOne(fetch = FetchType.EAGER)
     PriceItem price;
 
@@ -57,5 +58,13 @@ public class Person {
 
     public void setPrice(PriceItem price) {
         this.price = price;
+    }
+
+    public Integer getPr() {
+        return pr;
+    }
+
+    public void setPr(Integer pr) {
+        this.pr = pr;
     }
 }
